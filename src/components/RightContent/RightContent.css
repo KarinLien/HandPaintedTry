@@ -1,0 +1,27 @@
+.right-div {
+  width: 80%;
+  height: 100%;
+  float: right;
+}
+.menu-item-style {
+  list-style: none;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.menu-outside-border {
+  padding: 0;
+  border: solid 3px black;
+  min-height: 100px;
+  background: transparent;
+  text-align: center;
+  margin: 0 1rem;
+  color: black;
+
+  /*  can be shortened with border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;*/
+
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+}

@@ -1,24 +1,34 @@
 import React from "react";
-import Header from "./components/header";
+import Header from "./components/Header";
+import LeftMenu from "./components/LeftMenu";
+import RightContent from "./components/RightContent";
 import "./App.css";
 //https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a
-function App() {
-  return (
-    <div className="main-app">
-      <Header />
-      <div className="container">
-        <wired-card elevation="3">
-          <p>Elevation: 3</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </wired-card>
+class App extends React.Component {
+  state = {
+    menuItem: ""
+  };
+  clickMenuItem = menuItem => {
+    this.setState({
+      menuItem
+    });
+  };
+  render() {
+    const { menuItem } = this.state;
+    return (
+      <div className="main-app">
+        <Header />
+        <div className="container">
+          <LeftMenu
+            clickMenuItem={this.clickMenuItem}
+            menuItem={menuItem ? menuItem : undefined}
+          />
+          <RightContent menuItem={menuItem} />
+          <div style={{ clear: "both" }} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
