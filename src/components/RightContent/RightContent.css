@@ -7,7 +7,8 @@
   list-style: none;
   margin: 10px;
   text-align: center;
-  transition: all 0.2s;
+  cursor: pointer;
+  /* transition: all 0.2s; */
 }
 .menu-outside-border {
   padding: 0;
