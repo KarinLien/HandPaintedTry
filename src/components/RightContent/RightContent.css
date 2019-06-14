@@ -19,7 +19,7 @@
   margin: 0 1rem;
   color: black;
 
-  /*  can be shortened with border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;*/
+/*  can be shortened with border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;*/
 
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 255px;

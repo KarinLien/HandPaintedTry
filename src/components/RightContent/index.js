@@ -9,8 +9,9 @@ const Content = props => {
         <wired-card elevation="1" style={{ width: "60%" }}>
           <p>title: 1</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            content is write here!!!
+            <br />
+            <mark>hello this is content one</mark>
           </p>
         </wired-card>
       );
@@ -19,8 +20,9 @@ const Content = props => {
         <wired-card elevation="2" style={{ width: "60%" }}>
           <p>title: 2</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elitlamco.
-            laboris nisi ut aliquip ex ea commodo consequat.
+            content is write here !!
+            <br />
+            <mark>hello this is content two</mark>
           </p>
         </wired-card>
       );
@@ -29,8 +31,9 @@ const Content = props => {
         <wired-card elevation="3" style={{ width: "60%" }}>
           <p>title: 3</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            content is write here !!
+            <br />
+            <mark>hello this is content three</mark>
           </p>
         </wired-card>
       );
