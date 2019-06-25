@@ -51,7 +51,8 @@ class RightContent extends React.Component {
     const { menuItem } = this.props;
     return (
       <div className="right-div">
-        <Content menuItem={menuItem ? menuItem : undefined} />
+        <p>111</p>
+        {/* <Content menuItem={menuItem ? menuItem : undefined} /> */}
       </div>
     );
   }

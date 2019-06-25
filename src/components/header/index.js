@@ -22,7 +22,7 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <div
-          style={{ margin: "10px" }}
+          style={{ margin: "1% 10px", display: "inline-block" }}
           onClick={() => {
             this.setState({
               open: true
