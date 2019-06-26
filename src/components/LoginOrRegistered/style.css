@@ -1,0 +1,29 @@
+.login-layout {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+.login-title {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.title-margin {
+  margin: 10px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.slider {
+  background-color: #fa5d40;
+  height: 5px;
+  position: absolute;
+  width: calc(100% / 7 - 15px);
+  left: 0px;
+  top: 39px;
+  transition: left 0.3s ease-out;
+  will-change: left;
+}
+/* .login-title p:nth-of-type(2):checked ~ .slider {
+  left: calc((100% / 3) * 1 + (15px / 2));
+} */

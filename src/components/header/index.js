@@ -1,8 +1,15 @@
 import React from "react";
 import Bar from "../Bar";
 import { Link } from "react-router-dom";
+import "./style.css";
 const Btn = () => {
-  return <span>MENU</span>;
+  return (
+    <div className="menuToggle">
+      <span />
+      <span />
+      <span />
+    </div>
+  );
 };
 const BarContent = props => {
   return (
@@ -34,12 +41,18 @@ const BarContent = props => {
         <h2 style={{ margin: "10px auto" }}>MENU</h2>
       </div>
       <div>
-        <ul>
+        <ul style={{ cursor: "pointer" }}>
+          <li onClick={() => props.closeClick()}>
+            <Link to="/login">LogIN</Link>
+          </li>
           <li onClick={() => props.closeClick()}>
             <Link to="/list">List</Link>
           </li>
           <li onClick={() => props.closeClick()}>
             <Link to="/member">Member</Link>
+          </li>
+          <li onClick={() => props.closeClick()}>
+            <Link to="/">HOME</Link>
           </li>
         </ul>
       </div>
