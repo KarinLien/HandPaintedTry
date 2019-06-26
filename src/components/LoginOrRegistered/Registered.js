@@ -41,6 +41,18 @@ class Registered extends React.Component {
           />
           顯示密碼
         </label>
+        <div
+          style={{
+            width: "25%",
+            padding: "10px",
+            color: "white",
+            background: "black",
+            textAlign: "center",
+            marginTop: "15px"
+          }}
+        >
+          送出
+        </div>
       </div>
     );
   }
