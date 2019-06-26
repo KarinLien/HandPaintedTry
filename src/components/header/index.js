@@ -1,14 +1,47 @@
 import React from "react";
 import Bar from "../Bar";
-
+import { Link } from "react-router-dom";
 const Btn = () => {
   return <span>MENU</span>;
 };
 const BarContent = props => {
   return (
     <div>
-      <div onClick={() => props.closeClick()}>
-        <span>X</span>
+      <div
+        className="bar-content-title"
+        style={{ display: "flex", borderBottom: "1px solid black" }}
+      >
+        <div
+          onClick={() => props.closeClick()}
+          style={{
+            width: "45px",
+            height: "45px"
+          }}
+        >
+          <span
+            style={{
+              width: "45px",
+              height: "45px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              cursor: "pointer"
+            }}
+          >
+            X
+          </span>
+        </div>
+        <h2 style={{ margin: "10px auto" }}>MENU</h2>
+      </div>
+      <div>
+        <ul>
+          <li onClick={() => props.closeClick()}>
+            <Link to="/list">List</Link>
+          </li>
+          <li onClick={() => props.closeClick()}>
+            <Link to="/member">Member</Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

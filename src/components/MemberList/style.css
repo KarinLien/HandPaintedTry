@@ -1,0 +1,9 @@
+.member-list {
+  width: 60%;
+  margin: 10px 5%;
+}
+.list-title {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+  display: flex;
+  justify-content: space-around;
+}
