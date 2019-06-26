@@ -5,12 +5,12 @@
 }
 .login-title {
   display: flex;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 .title-margin {
-  margin: 10px;
+  padding: 10px;
 }
-.cursor {
+.login-cursor {
   cursor: pointer;
 }
 

@@ -3,21 +3,25 @@ import "./style.css";
 import Login from "./Login";
 import Registered from "./Registered";
 
+const type = [{ name: "Login" }, { name: "Registered" }];
+
 //https://codepen.io/jonathanobino/pen/gPKvLP
 class LoginOrRegistered extends React.Component {
   state = {
-    typeName: ""
+    typeName: "",
+    chooseWitch: ""
   };
-  setType = typeName => {
+  setType = (typeName, index) => {
     this.setState({
-      typeName
+      typeName,
+      chooseWitch: index
     });
   };
 
   render() {
     const WhichType = () => {
       const { typeName } = this.state;
-      if (typeName === "LOGIN") {
+      if (typeName === "Login") {
         return <Login />;
       } else if (typeName === "Registered") {
         return <Registered />;
@@ -25,23 +29,28 @@ class LoginOrRegistered extends React.Component {
         return <Login />;
       }
     };
+    console.log(this.state.chooseWitch);
     return (
       <div className="login-layout">
         <div className="login-title">
-          <p
-            className="title-margin cursor"
-            onClick={() => this.setType("LOGIN")}
-          >
-            LOGIN
-          </p>
-          <p
-            className="title-margin cursor "
-            onClick={() => this.setType("Registered")}
-          >
-            Registered
-          </p>
+          {type.map((item, index) => {
+            return (
+              <p
+                key={item.name}
+                style={{
+                  borderBottom:
+                    this.state.chooseWitch === index
+                      ? "2px solid #337ab7"
+                      : "2px solid #eee"
+                }}
+                className="title-margin login-cursor"
+                onClick={() => this.setType(item.name, index)}
+              >
+                {item.name}
+              </p>
+            );
+          })}
         </div>
-        <div className="slider" />
         <WhichType />
       </div>
     );
