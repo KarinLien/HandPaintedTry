@@ -1,6 +1,14 @@
 import React from "react";
 
 class Registered extends React.Component {
+  state = {
+    checkDisplayPassword: false
+  };
+  checkDisplayPassword = () => {
+    this.setState({
+      checkDisplayPassword: !this.state.checkDisplayPassword
+    });
+  };
   render() {
     return (
       <div style={{ marginTop: "10px" }}>
@@ -9,19 +17,30 @@ class Registered extends React.Component {
           name="name"
           //   value={this.state.address1}
           placeholder="請填寫帳號"
+          className="input-block"
         />
         <input
-          type="text"
+          type="email"
           name="Email"
           //   value={this.state.address1}
           placeholder="請填寫信箱"
+          className="input-block"
         />
         <input
-          type="text"
+          type={this.state.checkDisplayPassword ? "text" : "password"}
           name="password"
           //   value={this.state.address1}
           placeholder="密碼"
+          className="input-block"
         />
+        <label>
+          <input
+            type="checkbox"
+            onChange={this.checkDisplayPassword}
+            value={this.state.checkDisplayPassword}
+          />
+          顯示密碼
+        </label>
       </div>
     );
   }

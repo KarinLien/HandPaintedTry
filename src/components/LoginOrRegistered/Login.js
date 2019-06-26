@@ -9,12 +9,14 @@ class Login extends React.Component {
           name="Email"
           //   value={this.state.address1}
           placeholder="請填寫信箱或帳號"
+          className="input-block"
         />
         <input
           type="text"
           name="password"
           //   value={this.state.address1}
           placeholder="密碼"
+          className="input-block"
         />
       </div>
     );

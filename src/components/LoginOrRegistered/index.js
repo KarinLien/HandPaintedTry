@@ -9,7 +9,7 @@ const type = [{ name: "Login" }, { name: "Registered" }];
 class LoginOrRegistered extends React.Component {
   state = {
     typeName: "",
-    chooseWitch: ""
+    chooseWitch: 0
   };
   setType = (typeName, index) => {
     this.setState({
@@ -29,7 +29,6 @@ class LoginOrRegistered extends React.Component {
         return <Login />;
       }
     };
-    console.log(this.state.chooseWitch);
     return (
       <div className="login-layout">
         <div className="login-title">
