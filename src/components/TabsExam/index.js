@@ -1,12 +1,27 @@
 import React from "react";
 import "./style.css";
 
-const AAA = () => {
-  return <span>I AM AAA</span>;
+const BasicContent = () => {
+  return (
+    <div className="basic-box">
+      <div className="basic-input">
+        <label>name:</label>
+        <input type="text" />
+      </div>
+      <div className="basic-input">
+        <label>Email:</label>
+        <input type="text" />
+      </div>
+      <div className="basic-input">
+        <label>address:</label>
+        <input type="text" />
+      </div>
+    </div>
+  );
 };
 
 const data = [
-  { title: "Number One", content: <AAA /> },
+  { title: "BASIC INFORMATION", content: <BasicContent /> },
   { title: "Number Two", content: "EFGHIJK" },
   { title: "Number Three", content: "LMNOPQR" }
 ];

@@ -46,3 +46,30 @@
   position: absolute;
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.basic-box {
+  display: flex;
+  flex-direction: column;
+}
+.basic-input {
+  margin: 10px;
+  height: 33px;
+  display: inline-block;
+  width: 300px;
+  min-width: 300px;
+  position: relative;
+}
+.basic-input input {
+  height: 23px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  font-size: 13px;
+  border-radius: 3px;
+  width: 140px;
+}
+.basic-input label {
+  width: 120px;
+  font-size: 14px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: right;
+}
