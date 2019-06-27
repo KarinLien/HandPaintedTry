@@ -1,11 +1,14 @@
 .login-layout {
   position: relative;
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
+  border: 2px solid black;
 }
+
 .login-title {
   display: flex;
-  /* border-bottom: 1px solid black; */
+  width: 50%;
+  margin: 0 auto;
 }
 .title-margin {
   padding: 10px;
@@ -17,4 +20,25 @@
 .input-block {
   display: block;
   margin: 5px;
+  padding: 10px;
+}
+
+.login-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.registered-content {
+  width: 50%;
+  margin: 10px auto;
+}
+/* ---------- */
+
+.enter-btn {
+  width: 80%;
+  padding: 10px;
+  color: white;
+  background: black;
+  text-align: center;
+  margin: 15px auto;
+  cursor: pointer;
 }

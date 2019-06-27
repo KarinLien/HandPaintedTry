@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css";
 class Registered extends React.Component {
   state = {
     checkDisplayPassword: false
@@ -11,7 +11,7 @@ class Registered extends React.Component {
   };
   render() {
     return (
-      <div style={{ marginTop: "10px" }}>
+      <div className="registered-content">
         <input
           type="text"
           name="name"
@@ -41,18 +41,7 @@ class Registered extends React.Component {
           />
           顯示密碼
         </label>
-        <div
-          style={{
-            width: "25%",
-            padding: "10px",
-            color: "white",
-            background: "black",
-            textAlign: "center",
-            marginTop: "15px"
-          }}
-        >
-          送出
-        </div>
+        <div className="enter-btn">送出</div>
       </div>
     );
   }

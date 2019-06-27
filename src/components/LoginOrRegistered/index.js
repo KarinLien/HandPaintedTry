@@ -6,6 +6,7 @@ import Registered from "./Registered";
 const type = [{ name: "Login" }, { name: "Registered" }];
 
 //https://codepen.io/jonathanobino/pen/gPKvLP
+
 class LoginOrRegistered extends React.Component {
   state = {
     typeName: "",

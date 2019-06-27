@@ -14,45 +14,52 @@ const Btn = () => {
 const BarContent = props => {
   return (
     <div>
-      <div
-        className="bar-content-title"
-        style={{ display: "flex", borderBottom: "1px solid black" }}
-      >
+      <div className="bar-content-title">
         <div
           onClick={() => props.closeClick()}
-          style={{
-            width: "45px",
-            height: "45px"
-          }}
+          className="bar-content-close-btn"
         >
-          <span
-            style={{
-              width: "45px",
-              height: "45px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer"
-            }}
-          >
-            X
-          </span>
+          <span>X</span>
         </div>
         <h2 style={{ margin: "10px auto" }}>MENU</h2>
       </div>
       <div>
-        <ul style={{ cursor: "pointer" }}>
-          <li onClick={() => props.closeClick()}>
-            <Link to="/login">LogIN</Link>
+        <ul style={{ cursor: "pointer" }} className="menu-list">
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/login" className="menu-link">
+              Login
+            </Link>
           </li>
-          <li onClick={() => props.closeClick()}>
-            <Link to="/list">List</Link>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/list" className="menu-link">
+              List
+            </Link>
           </li>
-          <li onClick={() => props.closeClick()}>
-            <Link to="/member">Member</Link>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/member" className="menu-link">
+              Member
+            </Link>
           </li>
-          <li onClick={() => props.closeClick()}>
-            <Link to="/">HOME</Link>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/" className="menu-link">
+              HOME
+            </Link>
+          </li>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/home" className="menu-link">
+              REAL HOME
+            </Link>
+          </li>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/tabs" className="menu-link">
+              TAB EXAMPLE
+            </Link>
           </li>
         </ul>
       </div>
