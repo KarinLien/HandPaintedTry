@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 
+//https://codepen.io/tmrDevelops/pen/NPXodB
+
 const BasicContent = () => {
   return (
     <div className="basic-box">
@@ -59,7 +61,7 @@ class TabsExam extends React.Component {
               <div
                 className="tab-content"
                 style={{
-                  height: this.state.click === index ? "100%" : "0",
+                  height: this.state.click === index ? "200px" : "0",
                   opacity: this.state.click === index ? "1" : "0"
                 }}
               >

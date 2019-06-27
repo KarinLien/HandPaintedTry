@@ -7,7 +7,7 @@ import LoginOrRegistered from "./components/LoginOrRegistered";
 import TabsExam from "./components/TabsExam";
 
 import "./App.css";
-import { Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 //https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a
 class App extends React.Component {
   state = {
@@ -24,10 +24,7 @@ class App extends React.Component {
       <HashRouter basename="/">
         <div className="main-app">
           <Header />
-          <div className="container">
-            {/* <RightContent menuItem={menuItem} />
-            <div style={{ clear: "both" }} />  */}
-          </div>
+          <div className="container" />
         </div>
         {/* <Route path="/" component={Home} /> */}
         <Route path="/list" component={ProductList} />

@@ -40,6 +40,7 @@
 .tab-content-big-box {
   width: 40%;
   border: 1px solid black;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 .tab-content {
   transform: translateX(50px);
@@ -54,8 +55,8 @@
   margin: 10px;
   height: 33px;
   display: inline-block;
-  width: 300px;
-  min-width: 300px;
+  /* width: 300px;
+  min-width: 300px; */
   position: relative;
 }
 .basic-input input {
@@ -67,7 +68,7 @@
   width: 140px;
 }
 .basic-input label {
-  width: 120px;
+  width: 60px;
   font-size: 14px;
   line-height: 30px;
   display: inline-block;
