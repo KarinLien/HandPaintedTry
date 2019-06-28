@@ -21,8 +21,9 @@ class CountryMap extends React.Component {
           backgroundColor="transparent" //change it to blue !!!
           zoomOnScroll={false}
           containerStyle={{
-            width: "100%",
-            height: "520px"
+            width: "60%",
+            height: "520px",
+            margin: "0 auto"
           }}
           //   onRegionClick={handleClick} //gets the country code
           containerClassName="map"
