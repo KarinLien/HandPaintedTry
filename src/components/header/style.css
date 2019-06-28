@@ -36,7 +36,7 @@
 .menu-tag {
   margin: 20px;
   font-size: 18px;
-  padding: 15px 20px 15px 40px;
+
   margin-bottom: 10px;
   color: gainsboro;
   background: gainsboro;
@@ -70,4 +70,5 @@
   text-decoration: none;
   color: black;
   display: block;
+  padding: 15px 20px 15px 40px;
 }

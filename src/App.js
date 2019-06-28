@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./components/Header";
-import ProductList from "./components/productList";
-import MemberList from "./components/MemberList";
-import Home from "./components/Home";
-import LoginOrRegistered from "./components/LoginOrRegistered";
-import TabsExam from "./components/TabsExam";
+import ProductList from "./pages/productList";
+import MemberList from "./pages/MemberList";
+import Home from "./pages/Home";
+import LoginOrRegistered from "./pages/LoginOrRegistered";
+import TabsExam from "./pages/TabsExam";
+import SliderExam from "./pages/SliderExam";
 
 import "./App.css";
 import { Route, HashRouter } from "react-router-dom";
@@ -32,6 +33,7 @@ class App extends React.Component {
         <Route path="/login" component={LoginOrRegistered} />
         <Route path="/home" component={Home} />
         <Route path="/tabs" component={TabsExam} />
+        <Route path="/slider" component={SliderExam} />
       </HashRouter>
     );
   }

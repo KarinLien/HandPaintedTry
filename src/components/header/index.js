@@ -61,6 +61,12 @@ const BarContent = props => {
               TAB EXAMPLE
             </Link>
           </li>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/slider" className="menu-link">
+              SLIDER EXAMPLE
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

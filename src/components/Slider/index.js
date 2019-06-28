@@ -1,34 +1,17 @@
 import React from "react";
-
-//https://codepen.io/suez/pen/OjGQza  
+import "./style.css";
+import BasicSlider from "./BasicSlider";
+import CitiesSlider from "./CitiesSlider";
+//https://codepen.io/suez/pen/OjGQza
 
 class Slider extends React.Component {
-  state = { index: 0 };
-
-  dotClicked = e => {
-    this.setState({ index: parseInt(e.target.dataset.index, 10) });
-  };
-
   render() {
-    return (
-      <div className="slider-container">
-        <div
-          className="slider-innerContainer"
-          style={{ left: -100 * this.state.index + "%" }}
-        >
-          {this.props.children.map((child, index) => (
-            <div key={index}>{child}</div>
-          ))}
-        </div>
-        <div className="slider-dots">
-          {this.props.children.map((child, index) => (
-            <div key={index} data-index={index} onClick={this.dotClicked}>
-              {index === this.state.index ? "◉" : "◌"}
-            </div>
-          ))}
-        </div>
-      </div>
-    );
+    const { type, children, slides } = this.props;
+    if (type === "Basic") {
+      return <BasicSlider children={children} />;
+    } else if (type === "Cities") {
+      return <CitiesSlider slides={slides} />;
+    }
   }
 }
 export default Slider;

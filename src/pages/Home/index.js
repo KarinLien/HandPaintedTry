@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Slider from "../Slider";
+import Slider from "../../components/Slider";
 
 class Home extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class Home extends React.Component {
       <div className="home-layout">
         <h3 className="home-title">HERE IS　HOME PAGE</h3>
         <div>
-          <Slider>
+          <Slider type="Basic">
             <div>
               <h2>Slide1</h2>Slide 1 is plain
             </div>
