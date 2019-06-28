@@ -12,7 +12,7 @@ const Bg = styled.div`
   transform: ${props =>
     props.open ? `translate3d(-100%, 0, 0);` : `translate3d(0, 0, 0)`};
   transition-delay: ${props => (props.open ? `0s;` : ``)};
-  z-index: 100;
+  z-index: 101;
 `;
 const Content = styled.div`
   position: absolute;

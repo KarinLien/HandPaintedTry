@@ -67,6 +67,12 @@ const BarContent = props => {
               SLIDER EXAMPLE
             </Link>
           </li>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/countryvisited" className="menu-link">
+              COUNTRY VISITED
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

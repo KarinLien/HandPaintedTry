@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import LoginOrRegistered from "./pages/LoginOrRegistered";
 import TabsExam from "./pages/TabsExam";
 import SliderExam from "./pages/SliderExam";
+import CountryVisited from "./pages/CountryVisited";
 
 import "./App.css";
 import { Route, HashRouter } from "react-router-dom";
@@ -34,6 +35,7 @@ class App extends React.Component {
         <Route path="/home" component={Home} />
         <Route path="/tabs" component={TabsExam} />
         <Route path="/slider" component={SliderExam} />
+        <Route path="/countryvisited" component={CountryVisited} />
       </HashRouter>
     );
   }
