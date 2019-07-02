@@ -69,8 +69,14 @@ const BarContent = props => {
           </li>
           <li onClick={() => props.closeClick()} className="menu-tag">
             <span className="light" />
-            <Link to="/countryvisited" className="menu-link">
-              COUNTRY VISITED
+            <Link to="/react-hooks" className="menu-link">
+              REACT HOOKS
+            </Link>
+          </li>
+          <li onClick={() => props.closeClick()} className="menu-tag">
+            <span className="light" />
+            <Link to="/todo-list" className="menu-link">
+              TODO LIST
             </Link>
           </li>
         </ul>
