@@ -14,7 +14,7 @@
     "react-jvectormap": "0.0.12",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^4.3.1",
     "velocity-react": "^1.4.3",
     "wired-elements": "^1.0.0"
